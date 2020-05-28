@@ -450,15 +450,15 @@ vector<vertex<T>> directed_graph<T>::in_order_traversal(const int& u_id, directe
 //         n = nb[1].id; 
 // 	}
 
-	vector<vertex<T>> child = mst.get_neighbours(u_id);
-	vertex<T> right = child[0];
-	vertex<T> left = child[1];
-	if(u_id ==0){
-		return inOrder;
-	}
-	in_order_traversal(left.id, mst);
-	inOrder.push_back(vertex<T>(u_id, vertex_weights[u_id]));
-	in_order_traversal(right.id, mst);
+// 	vector<vertex<T>> child = mst.get_neighbours(u_id);
+// 	vertex<T> right = child[0];
+// 	vertex<T> left = child[1];
+// 	if(u_id ==0){
+// 		return inOrder;
+// 	}
+// 	in_order_traversal(left.id, mst);
+// 	inOrder.push_back(vertex<T>(u_id, vertex_weights[u_id]));
+// 	in_order_traversal(right.id, mst);
 
 	return inOrder;
 }
